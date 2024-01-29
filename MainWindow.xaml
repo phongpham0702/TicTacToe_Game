@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicTacToe_Game"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Tic Tac Toe" Height="450" Width="800">
+
+      
+    <Grid HorizontalAlignment="Right">
 
     </Grid>
 </Window>
