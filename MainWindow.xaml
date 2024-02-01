@@ -5,10 +5,79 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TicTacToe_Game"
         mc:Ignorable="d"
-        Title="Tic Tac Toe" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="Tic Tac Toe" Height="600" Width="600">
 
-      
-    <Grid HorizontalAlignment="Right">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="./Style.xaml">
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <!--Option buttons row-->
+            <RowDefinition Height="100"/>
+            <!--Option buttons row-->
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="Button1_0" 
+                Grid.Row="1" 
+                Grid.Column="0"
+                Content="X"/>
+         
+        <Button x:Name="Button1_1" 
+                Grid.Row="1" 
+                Grid.Column="1"
+                Content="X"/>
+        
+        <Button x:Name="Button1_2" 
+                Grid.Row="1" 
+                Grid.Column="2"
+                Content="X"/>
+        
+        <Button x:Name="Button2_0" 
+                Grid.Row="2" 
+                Grid.Column="0"
+                Content="X"/>
+
+        <Button x:Name="Button2_1" 
+                Grid.Row="2" 
+                Grid.Column="1"
+                Content="X"/>
+
+        <Button x:Name="Button2_2" 
+                Grid.Row="2" 
+                Grid.Column="2"
+                Content="X"/>
+
+        <Button x:Name="Button3_0" 
+                Grid.Row="3" 
+                Grid.Column="0"
+                Content="X"/>
+
+        <Button x:Name="Button3_1" 
+                Grid.Row="3" 
+                Grid.Column="1"
+                Content="X"/>
+
+        <Button x:Name="Button3_2" 
+                Grid.Row="3" 
+                Grid.Column="2"
+                Content="X"/>
 
     </Grid>
 </Window>
